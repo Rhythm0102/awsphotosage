@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PhotoSage</title>
+    <link rel="stylesheet" href="static/assets/css/contact.css">
+    <link rel="stylesheet" href="static/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-light">
+    <nav class="nav-bar" id="navbar">
+        <a href="/" class="nav-brand">
+            <div>
+                <img src="static/assets/images/logo.png" alt="PhotoSage Logo" class="nav-logo"> <!-- Add logo image here -->
+                <span class="nav-title"><b>PhotoSage</b></span>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/about" class="nav-link">About</a>
+            <a href="/contact" class="nav-link">Contact</a>
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+            </select>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>Have questions or suggestions? We'd love to hear from you!</p>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+
+    <script src="static\assets\js\contact.js"></script> 
+</body>
+</html>

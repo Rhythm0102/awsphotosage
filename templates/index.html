@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoSage - AI Chat Assistant</title>
+    <link rel="stylesheet" href="static\assets\css\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-light">
+    <nav class="nav-bar" id="navbar">
+        <a href="/" class="nav-brand">
+            <div>
+            <img src="static/assets/images/logo.png" alt="PhotoSage Logo" class="nav-logo"> <!-- Add logo image here -->
+            <span class="nav-title">PhotoSage</span>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/about" class="nav-link">About</a>
+            <a href="/contact" class="nav-link">Contact</a>
+            <select id="language-select" class="nav-opt">
+                <option value="en" class="nav-opt">English</option>
+                <option value="hi" class="nav-opt">Hindi</option>
+            </select>
+        </div>
+    </nav>
+    
+
+    <div class="chat-container">
+        <div class="chat-header ">
+            PhotoSage
+        </div>
+        <div id="chatMessages" class="chat-messages"></div>
+        <div id="errorMessage" class="error-message"></div>
+        <div class="chat-input">
+            <div id="dropZone" class="drop-zone">
+                Drag and drop an image here or click to upload
+                <input type="file" id="fileInput" style="display:none;" />
+            </div>
+            <img id="imagePreview" alt="Image preview" style="display: none;">
+            <div id="imageUploadAcknowledgement" style="display: none;">
+                Image uploaded successfully!
+            </div>
+            <div class="input-actions">
+                <input type="text" id="userInput" placeholder="Type your message..." autofocus>
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="static\assets\js\main.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+
+/* About Us Page Styles */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: black; /* Light background similar to theme */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 120px;
+    margin-bottom: 100px;
+    color: white;
+    z-index: 10;
+}
+
+.creator-list-name{
+    font-size: large;
+}
+
+.about-container h1, .about-container h2 {
+    color: white; /* Dark color for headings */
+    font-family: 'PT Serif', serif;
+}
+
+.about-container p {
+    font-size: 18px;
+    color: white; /* Slightly lighter text for readability */
+    line-height: 1.6;
+}
+
+.linkedin-link{
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+    }
+}

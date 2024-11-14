@@ -1,0 +1,82 @@
+.contact-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: black;
+    border-radius: 12px;
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.6); */
+    padding: 30px;
+    padding-right: 50px;
+    color: #e2e8f0;
+    margin-top: 120px;
+    z-index: 10;
+}
+
+.contact-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact-container p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4a5568;
+    border-radius: 5px;
+    background-color: #1a202c;
+    color: #e2e8f0;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #3a7bc8;
+}
+
+/* Dark theme adjustments */
+.theme-dark .contact-container {
+    background-color: #1a202c;
+}
+
+.theme-dark .form-group input,
+.theme-dark .form-group textarea {
+    background-color: #2d3748;
+    border-color: #4a5568;
+}
+
